@@ -304,24 +304,28 @@ public class PriorityQueueHeap<E> {
 		return true;
 	}
 
+	/*
+	 * Not used
 
-	public BTNode<Integer> BuildTree(int index){
-
-
-		BTNode<Integer> root = null;
-
-		if( index >= data.length)
+		public BTNode<Integer> BuildTree(int index){
+	
+	
+			BTNode<Integer> root = null;
+	
+			if( index >= data.length)
+				return root;
+	
+			root = new BTNode<Integer>(priority[index]);
+	
+			BuildTree(getLeftChildIndex(index));
+			BuildTree(index+1);
+			BuildTree(getRightChildIndex(index));
+	
 			return root;
-
-		root = new BTNode<Integer>(priority[index]);
-
-		BuildTree(getLeftChildIndex(index));
-		BuildTree(index+1);
-		BuildTree(getRightChildIndex(index));
-
-		return root;
-
-	}
+	
+		}
+	
+	*/
 
 
 }
