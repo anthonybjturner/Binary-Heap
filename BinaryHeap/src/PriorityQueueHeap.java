@@ -1,6 +1,6 @@
 /**
- * File: PriorityQueue.java
- * Description: A list with priorities assigned to each item
+ * File: PriorityQueueHeap.java
+ * Description: A binary heap implementation of a Priority Queue
  * @author Anthony Turner
  *
  */
@@ -12,11 +12,11 @@ public class PriorityQueueHeap<E> {
 	private int current_size;
 
 	/**
-	 * Initialize an empty priority list with a maximum priority
-	 * Precondition: max_priority is >= 0
-	 * Postcondition: This priority list is empty
+	 * Initialize a PriorityQueue with the given size
+	 * Precondition: size is >= 0
+	 * Postcondition: This priority queue is empty
 	 * @param size the current size of this queue
-	 * @throws IllegalArgumentException if the max priority is negative
+	 * @throws IllegalArgumentException if the size is negative
 	 */
 	public PriorityQueueHeap(int size){
 
@@ -28,6 +28,7 @@ public class PriorityQueueHeap<E> {
 		current_size = 0;
 
 	}
+
 
 
 	/**
@@ -96,7 +97,7 @@ public class PriorityQueueHeap<E> {
 	
 	
 	/**
-	 *
+	 * Removes the highest priority item from this queue
 	 */
 	public Object remove(){
 
@@ -212,8 +213,6 @@ public class PriorityQueueHeap<E> {
 	}
 
 
-	
-
 	public void showHeap(){
 
 		printArray();
@@ -221,7 +220,7 @@ public class PriorityQueueHeap<E> {
 
 	}
 
-	public void printArray(){
+	private void printArray(){
 
 		//Array
 		System.out.print("Heap array: ");
