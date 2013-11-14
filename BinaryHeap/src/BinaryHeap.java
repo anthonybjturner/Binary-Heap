@@ -2,9 +2,9 @@ import java.util.Random;
 
 
 /**
- * <b>File:</b> BinaryHeap.java
- * <b>Description: Binary Heap program uses a Binary Heap data structure within a PriorityQueue</b> 
- * @author Anthony Turner
+ * <b>File:</b> BinaryHeap.java<br>
+ * <b>Description:</b> Binary Heap program uses a Binary Heap data structure within a PriorityQueue<br> 
+ * @author Anthony Turner<br>
  * <b>Course:</b> Advanced Data Structures CSIII
  *
  */
@@ -68,8 +68,6 @@ public class BinaryHeap {
 
     public static void main(String[] args){
 
-    	final int NUM_ITEMS = 20;
-    	
-    	new BinaryHeap(NUM_ITEMS);
+    		new BinaryHeap(20);
     }
 }

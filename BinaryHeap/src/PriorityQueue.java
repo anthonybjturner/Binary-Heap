@@ -6,8 +6,6 @@ import java.util.Queue;
 /**
  * File: PriorityQueue.java
  * Description: A queue with priorities assigned to each item
- * This implementation differs from the PriorityQueueHeap
- *
  * @author Anthony Turner
  *
  */
