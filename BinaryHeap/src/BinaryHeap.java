@@ -68,6 +68,7 @@ public class BinaryHeap {
 
     public static void main(String[] args){
 
-    		new BinaryHeap(20);
+    		final int NUM_ITEMS = 20;
+    		new BinaryHeap(NUM_ITEMS);
     }
 }

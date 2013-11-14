@@ -1,6 +1,6 @@
 /**
- * File: PriorityQueue.java
- * Description: A list with priorities assigned to each item
+ * File: PriorityQueueHeap.java
+ * Description: A PriorityQueue with a BinaryHeap data structures implemented
  * @author Anthony Turner
  *
  */
@@ -12,11 +12,11 @@ public class PriorityQueueHeap<E> {
     private int current_size;
 
     /**
-     * Initialize an empty priority list with a maximum priority
-     * Precondition: max_priority is >= 0
-     * Postcondition: This priority list is empty
+     * Initialize an empty priorityQueue with a given size
+     * Precondition: size is >= 0
+     * Postcondition: This priority queue is empty
      * @param size the current size of this queue
-     * @throws IllegalArgumentException if the max priority is negative
+     * @throws IllegalArgumentException if the size is negative
      */
     public PriorityQueueHeap(int size){
 
